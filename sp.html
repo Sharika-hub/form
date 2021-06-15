@@ -1,0 +1,54 @@
+<html>
+<head>
+<center>
+<style>
+body  {
+  background-image: url("https://images.unsplash.com/photo-1587815073078-f636169821e3?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzN8fHxlbnwwfHx8fA%3D%3D&amp;w=1000&amp;q=80");
+  
+  
+}
+th,td {
+  border: 1px solid black;
+  background-color: white
+}
+</style>
+<title>Login</title>
+
+
+<script language="javascript">
+
+	
+	function validate(form){
+		if(form.username.value.length==0){
+			alert("Enter username!");
+			form.username.focus();
+			return false;
+		}
+
+		return true;
+	}
+
+
+</script>
+
+<body> 
+<table>
+<tr>
+<td><h1><center>Login</center></h1></td>
+</tr>
+<form method="post" action="fruit.html" onsubmit="return validate(this)">
+<tr>
+<td><p>User Name: <input type="text" name="username" id="user"></p></td>
+</tr>
+<tr>
+<td><p>Password: <input type="password" name="userpassword" id="pwd"></p></td>
+</tr>
+<tr>
+<td><p><center><input type="Submit" value="Login"></center></p></td>
+</tr>
+</table>
+</center>
+</form>
+<h1><a href="front.html">Back</a></h1>
+</body>
+</html>
